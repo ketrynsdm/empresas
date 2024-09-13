@@ -1,6 +1,6 @@
 ## Como iniciar a API
 
-No terminal "json-server --watch mocks/db.json" para roda a api fake, em outro terminal diferente "ng serve" para iniciar o projeto
+No terminal de um "npm install" depois "json-server --watch mocks/db.json" para roda a api fake, em outro terminal diferente "ng serve" para iniciar o projeto
 http://localhost:4200/
 
 ## O que foi feito
