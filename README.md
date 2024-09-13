@@ -24,4 +24,4 @@ Framework Angular, versão version 14.2.7.
 
 ## O que Não foi feito
 
-O botão de enviar não está bloqueando o formulário, isso permite no envio do formulário, alguns detalhes no layout para ficar melhor o visual,esses são os dois ponto de melhoria.
+O botão de enviar não está bloqueando o formulário, isso permite no envio do formulário, alguns detalhes no layout para ficar melhor o visual,não fiz teste unitario,esses são os pontos de melhoria.
