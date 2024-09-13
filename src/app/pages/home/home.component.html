@@ -1,0 +1,72 @@
+<app-navbar>Pedidos de Abertura da empresa</app-navbar>
+
+<div class="inf-center">
+    <div class="container">
+        <div class="align-content">
+            <div class="overflow">
+                <div class="list" *ngFor="let item of cards">
+                    <app-card [card]="item" (clickview)="btnview($event)"></app-card>
+                </div>
+            </div>
+            <div class="container-center" *ngIf="card">
+                <div class="linha"></div>
+                <div class="arrow"></div>
+                <div class="linha"></div>
+            </div>
+            <div class="data-empresa" *ngIf="card">
+                <div>
+                    <h5>Detalhes do pedido</h5>
+                    <app-button (click)="onClick($event)">Editar</app-button>
+                </div>
+                
+                <div class="users" >
+                    <div class="empresa-img">
+                        <img src="../../../assets/img/user.png" alt="">
+                        <span>{{card.empresa.ds_nome_fantasia}}</span>
+                    </div>
+                    <div class="data">
+                        <div class="form-start">
+                            <label for=""><b>Responsável:</b></label>
+                            <span>{{card.solicitante.ds_responsavel}}</span>
+                        </div>
+                        <div class="form-start">
+                            <label for=""><b>CPF:</b></label>
+                            <span>{{card.solicitante.nu_cpf}}</span>
+                        </div>
+                        <div class="form-start">
+                            <label for=""><b>Endereço:</b></label>
+                            <span>{{card.empresa.endereco.ds_logradouro}}</span>
+                        </div>
+                        <div class="form-start">
+                            <label for=""><b>Bairro:</b></label>
+                            <span>{{card.empresa.endereco.ds_bairro}}</span>
+                        </div>
+                        <div class="form-start">
+                            <label for=""><b>Cidade:</b></label>
+                            <span>{{card.empresa.endereco.ds_municipio}}</span>
+                        </div>
+                        <div class="form-start">
+                            <label for=""><b>CEP:</b></label>
+                            <span>{{card.empresa.endereco.co_cep}}</span>
+                        </div>
+                        <div class="form-start">
+                            <label for=""><b>Complemento:</b></label>
+                            <span>{{card.empresa.endereco.ds_complemento}}</span>
+                        </div>
+                        <div class="form-start">
+                            <label for=""><b>UF:</b></label>
+                            <span>{{card.empresa.endereco.co_uf}}</span>
+                        </div>
+                        <div class="form-start">
+                            <label for=""><b>Número:</b></label>
+                            <span>{{card.empresa.endereco.ds_logradouro}}</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

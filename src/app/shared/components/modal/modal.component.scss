@@ -1,0 +1,52 @@
+ng-template {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    padding: none;
+    border-bottom: #3498db;
+    justify-content: flex-end;
+    margin-top: -23px;
+    margin-right: -23px;
+  
+    .btn-close {
+        --bs-btn-close-color: #ffffff;
+        --bs-btn-close-opacity: 0.5;
+        --bs-btn-close-hover-opacity: 0.75;
+        --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        display: flex;
+        padding: 0 ;
+        margin: 0;
+        background-color: #295c7e;
+        width: 25px;
+        height: 25px;
+        border-radius: 50px 50px;
+        color: white;
+        border: 1px solid #fdfdfd00;
+    }
+}
+
+.check {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+

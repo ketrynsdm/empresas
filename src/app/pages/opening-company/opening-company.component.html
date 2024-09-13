@@ -1,0 +1,99 @@
+<app-navbar [btn]="false">Solicitar Abertura da empresa</app-navbar>
+
+<div class="inf-center">
+    <div class="container">
+        <form class="align-content" [formGroup]="form">
+            <div class="form-data">
+                <h5>Dados do solicitante</h5>
+                <div class="data">
+                    <div class="form-start">
+                        <label for=""><b>Responsável pela empresa*</b></label>
+                        <input type="text" formControlName="ds_responsavel" required>
+                    </div>
+                    <div class="form-start">
+                        <label for=""><b>CPF *</b></label>
+                        <input 
+                            type="text" 
+                            formControlName="nu_cpf" 
+                            name="cpf" 
+                            minlength="11" 
+                            maxlength="14"  
+                            placeholder="99999999999"
+                            [value]="form.get('nu_cpf')?.value | cpfText" 
+                            required 
+                        />
+                    </div>
+                    <div class="form-start">
+                        <label for=""><b>Data nascimento*</b></label>
+                        <input type="date" formControlName="date_nascimento" placeholder="DD/MM/AAAA">
+                    </div>
+                </div>
+                <h5>Dados da empresa</h5>
+                <div class="data">
+                    <div class="form-start">
+                        <label for=""><b>Nome fantasia*</b></label>
+                        <input type="text" formControlName="ds_nome_fantasia" required>
+                    </div>
+                    <div >
+                        <label for=""><b>Escolha sua entidade de registro*</b></label>
+                        <div *ngFor="let item of registro">
+                            <div class="radios">
+                                <input type="radio" id="Cartório" [value]="item.key" formControlName="co_entidade_registro"/>
+                                <label for="Cartório">{{ item.value }}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-center">
+                <div class="linha"></div>
+            </div>
+            <div class="data-empresa">
+                <h5>Endereço da empresa</h5>
+                <div class="data">
+                    <div class="form-start">
+                        <label for=""><b>CEP*</b></label>
+                        <input 
+                            type="text" 
+                            formControlName="co_cep" 
+                            required 
+                            placeholder="99999-999" 
+                            [value]="form.get('co_cep')?.value | cepText"
+                            maxlength="8"
+                        />
+                    </div>
+                    <div class="form-start">
+                        <label for=""><b>Endereço*</b></label>
+                        <input type="text" formControlName="ds_logradouro">
+                    </div>
+                    <div class="form-start">
+                        <label for=""><b>Bairro*</b></label>
+                        <input type="text" formControlName="ds_bairro">
+                    </div>
+                    <div class="form-start">
+                        <label for=""><b>Complemento*</b></label>
+                        <input type="text" formControlName="ds_complemento">
+                    </div>
+                    <div class="form-start">
+                        <label for=""><b>Cidade*</b></label>
+                        <input type="text" formControlName="ds_municipio">
+                    </div>
+                    <div class="form-start">
+                        <label for=""><b>Estado*</b></label>
+                        <select formControlName="co_uf" class="form-select">
+                            <option 
+                                *ngFor="let item of estado" 
+                                [value]="item.id" 
+                            >{{ item.sigla }}</option>
+                        </select>
+                    </div>
+                    <div class="sub-btn">
+                        <app-button (click)="onSubmit()" type="submit" [disabled]="!form.valid">Enviar</app-button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>

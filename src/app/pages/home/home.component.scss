@@ -1,0 +1,135 @@
+.inf-center {
+    width: 100%;
+    padding: 42px 0px;
+}
+
+.align-content {
+    display: flex;
+}
+
+.overflow {
+    width: 45%;
+    padding: 25px 0px;
+    height: 453px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 22px;
+}
+
+.container-center {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.linha {
+    width: 4px;
+    height: 200px;
+    background-color: #3498db;
+    border-radius: 4px;
+}
+
+.arrow{
+    border: solid #3498db;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(312deg);
+}
+
+.data-empresa {
+    width: 45%;
+    padding: 20px 0px;
+}
+
+.data-empresa>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+h5 {
+    color: #9da8b2;
+}
+
+.users {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.empresa-img {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.data {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.form-start{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+@media  (max-width: 992px) {
+    .overflow{
+        width: 50%;
+    }
+
+    .container-center {
+        width: 5%;
+    }
+
+    .data-empresa {
+        width: 45%;
+    }
+
+    .list {
+        width: 100%;
+    }
+}
+
+@media  (max-width: 768px) {
+    .overflow{
+        width: 100%;
+    }
+    .align-content {
+        flex-direction: column;
+    }
+
+    .container-center {
+        display: none;
+    }
+
+    .data-empresa {
+        width: 100%;
+    }
+
+    .list {
+        width: 100%;
+    }
+}

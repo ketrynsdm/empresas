@@ -1,0 +1,15 @@
+
+<div class="card">
+    <div class="flex-center">
+        <div>
+            <div class="img"></div>
+        </div>
+        <div class="infor">
+            <p><b>{{card.solicitante.ds_responsavel}}</b></p>
+            <p>{{card.empresa.ds_nome_fantasia}}</p>
+        </div>
+        <div class="btn">
+            <app-button (click)="onClick(card.id)">Visualizar</app-button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container-home">
+    <div class="container">
+        <div class="align-header">
+            <div class="division">
+                <div class="logo"></div>
+                <div class="title">
+                     <ng-content></ng-content>
+                </div>
+            </div>
+            <div class="btn-open" *ngIf="btn">
+                <app-button (click)="navigate()">Solicitar Abertura</app-button>
+            </div>
+        </div>
+    </div>
+</div>

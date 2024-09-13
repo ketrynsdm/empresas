@@ -1,0 +1,40 @@
+.container-home {
+    background-color: #c3cfd9b0;
+    width: 100%;
+}
+
+.align-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+
+.division {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../../assets/img/img-logo.png');
+    border-radius: 50px 50px;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    color: hsl(208.09deg 69.48% 51.18%);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.btn-open {
+    width: calc(100% / 2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

@@ -1,0 +1,93 @@
+.inf-center {
+    width: 100%;
+    padding: 32px 0px;
+}
+
+.align-content {
+    display: flex;
+}
+
+.form-data {
+    width: 45%;
+    padding: 20px 0px;
+}
+
+.container-center {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.linha {
+    width: 4px;
+    height: 400px;
+    background-color: #3498db;
+    border-radius: 4px;
+}
+
+.data-empresa {
+    width: 45%;
+    padding: 20px 0px;
+}
+
+h5 {
+    color: #9da8b2;
+}
+
+.data {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-start input {
+    width: 100%;
+}
+
+.radios {
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px 0px 0px;
+    width: 100%;
+}
+
+.form-select {
+    border: 1px solid black;
+    border-radius: 2px 2px;
+    height: 33px;
+}
+
+.form-control { 
+    border: 1px solid black;
+    border-radius: 2px 2px;
+    margin-top: 10px;
+    width: 300px; 
+}
+
+.sub-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
