@@ -8,16 +8,18 @@ import {
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 import { ServiceService } from 'src/app/services/service.service';
 import { ModalComponent } from 'src/app/shared/components/modal/modal.component';
+import { RouteComponent } from 'src/app/shared/components/route-component/route-component.component';
 
 @Component({
   selector: 'app-opening-company',
   templateUrl: './opening-company.component.html',
   styleUrls: ['./opening-company.component.scss'],
 })
-export class OpeningCompanyComponent implements OnInit {
+export class OpeningCompanyComponent extends RouteComponent implements OnInit {
   form!: FormGroup;
   registro!: any;
   estado!: any;
+  filter!: any;
 
   constructor(
     config: NgbModalConfig,
@@ -25,6 +27,7 @@ export class OpeningCompanyComponent implements OnInit {
     private service: ServiceService,
     private formBuilder: FormBuilder,
   ) {
+    super();
     config.backdrop = 'static';
     config.keyboard = false;
   }
@@ -60,6 +63,13 @@ export class OpeningCompanyComponent implements OnInit {
     });
   }
 
+  // changeInput(target: any) {
+  //   if (target instanceof EventTarget) {
+  //     var elemento = target as HTMLInputElement;
+  //     this.filter = elemento.value;
+  //   }
+  // }
+
   getRegistro(): void {
     this.service.getRegistro().subscribe({
       next: (data) => {
@@ -78,6 +88,7 @@ export class OpeningCompanyComponent implements OnInit {
 
   onSubmit(): void {
     const formValue = this.form.getRawValue();
+    console.log('submit', formValue);
     const factoryData = {
       solicitante: {
         ds_responsavel: formValue.ds_responsavel,

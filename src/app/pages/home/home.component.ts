@@ -1,22 +1,21 @@
-import { Component, EventEmitter, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import { Company } from 'src/app/interfaces/company';
 import { ServiceService } from 'src/app/services/service.service';
+import { RouteComponent } from 'src/app/shared/components/route-component/route-component.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent extends RouteComponent implements OnInit {
   list: any;
   cards: Company[] = [];
   card!: Company;
 
-  constructor(
-    private service: ServiceService,
-    private router: Router,
-  ) {}
+  constructor(private service: ServiceService) {
+    super();
+  }
 
   ngOnInit(): void {
     this.getCard();

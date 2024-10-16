@@ -8,31 +8,30 @@
                 <div class="data">
                     <div class="form-start">
                         <label for=""><b>Responsável pela empresa*</b></label>
-                        <input type="text" formControlName="ds_responsavel" required>
+                        <app-input type="text" [control]="form.controls['ds_responsavel']"></app-input>
                     </div>
                     <div class="form-start">
                         <label for=""><b>CPF *</b></label>
-                        <input 
+                        <app-input 
                             type="text" 
-                            formControlName="nu_cpf" 
+                            [control]="form.controls['nu_cpf']" 
                             name="cpf" 
                             minlength="11" 
                             maxlength="14"  
                             placeholder="99999999999"
                             [value]="form.get('nu_cpf')?.value | cpfText" 
-                            required 
-                        />
+                        ></app-input>
                     </div>
                     <div class="form-start">
                         <label for=""><b>Data nascimento*</b></label>
-                        <input type="date" formControlName="date_nascimento" placeholder="DD/MM/AAAA">
+                        <app-input type="date" [control]="form.controls['date_nascimento']"></app-input>
                     </div>
                 </div>
                 <h5>Dados da empresa</h5>
                 <div class="data">
                     <div class="form-start">
                         <label for=""><b>Nome fantasia*</b></label>
-                        <input type="text" formControlName="ds_nome_fantasia" required>
+                        <app-input type="text" [control]="form.controls['ds_nome_fantasia']"></app-input>
                     </div>
                     <div >
                         <label for=""><b>Escolha sua entidade de registro*</b></label>
@@ -53,30 +52,29 @@
                 <div class="data">
                     <div class="form-start">
                         <label for=""><b>CEP*</b></label>
-                        <input 
+                        <app-input 
                             type="text" 
-                            formControlName="co_cep" 
-                            required 
+                            [control]="form.controls['co_cep']"
                             placeholder="99999-999" 
                             [value]="form.get('co_cep')?.value | cepText"
                             maxlength="8"
-                        />
+                        ></app-input>
                     </div>
                     <div class="form-start">
                         <label for=""><b>Endereço*</b></label>
-                        <input type="text" formControlName="ds_logradouro">
+                        <app-input type="text" [control]="form.controls['ds_logradouro']"></app-input>
                     </div>
                     <div class="form-start">
                         <label for=""><b>Bairro*</b></label>
-                        <input type="text" formControlName="ds_bairro">
+                        <app-input type="text" [control]="form.controls['ds_bairro']"></app-input>
                     </div>
                     <div class="form-start">
                         <label for=""><b>Complemento*</b></label>
-                        <input type="text" formControlName="ds_complemento">
+                        <app-input type="text" [control]="form.controls['ds_complemento']"></app-input>
                     </div>
                     <div class="form-start">
                         <label for=""><b>Cidade*</b></label>
-                        <input type="text" formControlName="ds_municipio">
+                        <app-input type="text" [control]="form.controls['ds_municipio']"></app-input>
                     </div>
                     <div class="form-start">
                         <label for=""><b>Estado*</b></label>

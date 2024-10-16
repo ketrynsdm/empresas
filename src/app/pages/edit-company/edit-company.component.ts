@@ -5,18 +5,18 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
-import { Company } from 'src/app/interfaces/company';
 import { ServiceService } from 'src/app/services/service.service';
 import { ModalComponent } from 'src/app/shared/components/modal/modal.component';
+import { RouteComponent } from 'src/app/shared/components/route-component/route-component.component';
 
 @Component({
   selector: 'app-edit-company',
   templateUrl: './edit-company.component.html',
   styleUrls: ['./edit-company.component.scss'],
 })
-export class EditCompanyComponent implements OnInit {
+export class EditCompanyComponent extends RouteComponent implements OnInit {
   formById!: FormGroup;
   registro!: any;
   estado!: any;
@@ -26,10 +26,10 @@ export class EditCompanyComponent implements OnInit {
     config: NgbModalConfig,
     private modalService: NgbModal,
     private service: ServiceService,
-    private router: Router,
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
   ) {
+    super();
     config.backdrop = 'static';
     config.keyboard = false;
   }

@@ -45,102 +45,22 @@
     {
       "solicitante": {
         "ds_responsavel": "Linx",
-        "nu_cpf": "13212312312",
-        "date_nascimento": "2024-09-12"
+        "nu_cpf": "704.333.271-03",
+        "date_nascimento": "2024-04-10"
       },
       "empresa": {
         "ds_nome_fantasia": "KETRYN SILVA DE MIRANDA",
-        "co_entidade_registro": 104305,
+        "co_entidade_registro": 104308,
         "endereco": {
-          "co_cep": "74453-33",
+          "co_cep": "74453-330",
           "ds_logradouro": "Rua são geraldo",
-          "ds_complemento": "123",
+          "ds_complemento": "311",
           "ds_bairro": "rodoviario",
           "ds_municipio": "Goiânia",
-          "co_uf": "50"
+          "co_uf": "52"
         }
       },
       "id": 3
-    },
-    {
-      "solicitante": {
-        "ds_responsavel": "",
-        "nu_cpf": "",
-        "date_nascimento": ""
-      },
-      "empresa": {
-        "ds_nome_fantasia": "",
-        "co_entidade_registro": "",
-        "endereco": {
-          "co_cep": "",
-          "ds_logradouro": "",
-          "ds_complemento": "",
-          "ds_bairro": "",
-          "ds_municipio": "",
-          "co_uf": ""
-        }
-      },
-      "id": 4
-    },
-    {
-      "solicitante": {
-        "ds_responsavel": "",
-        "nu_cpf": "",
-        "date_nascimento": ""
-      },
-      "empresa": {
-        "ds_nome_fantasia": "",
-        "co_entidade_registro": "",
-        "endereco": {
-          "co_cep": "",
-          "ds_logradouro": "",
-          "ds_complemento": "",
-          "ds_bairro": "",
-          "ds_municipio": "",
-          "co_uf": ""
-        }
-      },
-      "id": 5
-    },
-    {
-      "solicitante": {
-        "ds_responsavel": "",
-        "nu_cpf": "",
-        "date_nascimento": ""
-      },
-      "empresa": {
-        "ds_nome_fantasia": "",
-        "co_entidade_registro": "",
-        "endereco": {
-          "co_cep": "",
-          "ds_logradouro": "",
-          "ds_complemento": "",
-          "ds_bairro": "",
-          "ds_municipio": "",
-          "co_uf": ""
-        }
-      },
-      "id": 6
-    },
-    {
-      "solicitante": {
-        "ds_responsavel": "",
-        "nu_cpf": "",
-        "date_nascimento": ""
-      },
-      "empresa": {
-        "ds_nome_fantasia": "",
-        "co_entidade_registro": "",
-        "endereco": {
-          "co_cep": "",
-          "ds_logradouro": "",
-          "ds_complemento": "",
-          "ds_bairro": "",
-          "ds_municipio": "",
-          "co_uf": ""
-        }
-      },
-      "id": 7
     }
   ],
   "entidade-registro": [

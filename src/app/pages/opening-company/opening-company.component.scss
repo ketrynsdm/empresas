@@ -57,8 +57,16 @@ h5 {
     width: 100%;
 }
 
+app-input {
+    width: 100%;
+}
+
 .radios {
     display: flex;
+
+    app-input {
+        width: 10%;
+    }
 }
 
 .btn {
